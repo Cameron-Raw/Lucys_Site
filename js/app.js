@@ -8,6 +8,8 @@ $(document).ready(function(){
 	var greetingH2 = $("#greeting h2");
 	var greetingP = $("#greeting p");
 
+	//Below code needs re-writing... UGLY
+
 
 	//Fade in "Discover the power"... "of flawless copy"
 	discover1.animate({opacity: 1}, 1500, function(){
