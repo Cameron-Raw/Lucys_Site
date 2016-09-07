@@ -39,6 +39,9 @@ header {
       float: left;
       font-family: "Julius Sans One", sans-serif;
       padding: 5px 5px;
-      margin-top: 30px; }
+      margin-top: 30px;
+      transition: color 1s; }
+      header nav li:hover {
+        color: #b94d69; }
 
 /*# sourceMappingURL=style.css.map */
