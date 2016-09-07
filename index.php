@@ -80,7 +80,7 @@
 
 
 	<footer>
-		<p>Designed and developed by Cameron Raw 2016 &copy;</p>
+		<p>Designed and developed by Cameron Raw <?php echo date("Y"); ?>  &copy;</p>
 	</footer>
 
 	
