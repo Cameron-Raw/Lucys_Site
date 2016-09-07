@@ -1,0 +1,128 @@
+/* Main colour scheme */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4 {
+  font-family: "Julius Sans One", sans-serif;
+  margin: 0; }
+
+header {
+  width: 100%;
+  height: 65px;
+  background-color: #191919;
+  color: white;
+  padding-top: 1px;
+  display: flex;
+  justify-content: space-between; }
+  header h1 {
+    position: relative;
+    top: 35%;
+    height: 50%;
+    padding-left: 15px; }
+  header h2 {
+    position: relative;
+    height: 25%;
+    top: 55%;
+    font-size: 1em;
+    padding-left: 15px; }
+
+#headerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+nav ul {
+  height: 100%;
+  display: flex;
+  position: relative;
+  font-family: "Julius Sans One", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding-right: 15px;
+  margin-top: 6.25%; }
+nav li {
+  padding: 0 10px;
+  height: 10%;
+  transition: color 0.5s; }
+  nav li:hover {
+    color: #b94d69; }
+
+footer {
+  width: 100%;
+  height: 65px;
+  background-color: #191919;
+  color: white;
+  padding-top: 1px; }
+  footer p {
+    text-align: center;
+    position: relative;
+    width: 50%;
+    left: 25%; }
+
+#content {
+  height: 80%;
+  width: 100%;
+  background: linear-gradient(rgba(77, 185, 91, 0.6), rgba(77, 185, 91, 0.6)), url(img/feathers.png); }
+
+#content-container {
+  position: relative;
+  height: 90%;
+  width: 80%;
+  top: 5%;
+  left: 10%; }
+
+#discover {
+  font-size: 3.5em;
+  font-family: 'Kaushan Script', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  width: 100%; }
+
+#part1, #part2 {
+  opacity: 0; }
+
+#greeting {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  height: 50%;
+  color: white;
+  opacity: 0; }
+  #greeting img {
+    position: relative;
+    width: 20%;
+    margin: 20px 0;
+    left: 40%;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 5px 15px black;
+    opacity: 0; }
+  #greeting h2 {
+    position: relative;
+    text-align: center;
+    opacity: 0; }
+  #greeting p {
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    left: 10%;
+    width: 80%;
+    color: white; }
+
+#lucy-hello {
+  position: relative;
+  left: 25%;
+  height: 90%;
+  width: 50%;
+  margin: 0; }
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)); }
+
+/*# sourceMappingURL=style.css.map */
