@@ -1,65 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<!-- For use with IE -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- Controls scaling for mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Calls in Bootstrap from its CDN. Bear in mind this is an older version -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	<title>Lucy Lynch || Literary Services</title>
-</head>
-
-<body>
-
-	<header>
-		<div class="container-fluid group">
-
-			<div id="logo-div">
-
-				<h1>Lucy Lynch</h1>
-				<h2>Copywriter, copy-editor and proof reader</h2>
-
-			</div>
-
-			<nav>
-				<ul class="group">
-					<li>Biography</li>
-					<li>Qualifications</li>
-					<li>Publications</li>
-					<li>Testimonials</li>
-					<li>Contact</li>
-				</ul>
-			</nav>
-
-
-		</div>
-		
-
-	</header>
+<?php include 'includes/header.php'; ?>
 
 	<div id="content">
 
-		<div id="content-container">
+		<div class="container">
 
-			<h1 id="discover"><span id="part1">Discover the power</span>
-							    <span id="part2"> of flawless copy</span></h1>
+			<h1 id="discover">Discover the power of flawless copy</h1>
 			
 
 
-		</div>
+		
 
-		<div id="greeting">
 
-			<div class="overlay"></div>
-
-			<div id="lucy-hello">
 
 				<img src="img/lucymain.jpg">
 
@@ -69,27 +20,16 @@
 				in your next project.<br>...</p>
 
 
-			</div>
+			
 
 
 
 		</div>
 
+
+
 	</div>
 
 
 
-	<footer>
-		<p>Designed and developed by Cameron Raw <?php echo date("Y"); ?>  &copy;</p>
-	</footer>
-
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Call in Bootstrap js files from CDN (older version) -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="js/app.js"></script>
-
-</body>
-
-
-</html>
+<?php include 'includes/footer.php'; ?>

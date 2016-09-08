@@ -2,7 +2,16 @@
 @import "imports/_global.scss";
 @import "imports/_header.scss";
 
+#content {
+	background: linear-gradient(
+					$background-transparent,
+					$background-transparent
+				), 
+				url(img/feathers.png);
 
+	width: 100%;
+	padding-top: 1px;
+}
 
 
 
