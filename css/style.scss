@@ -1,17 +1,41 @@
 @import "imports/_variables.scss";
 @import "imports/_global.scss";
 @import "imports/_header.scss";
+@import "imports/_footer.scss";
 
 #content {
-	background: linear-gradient(
-					$background-transparent,
-					$background-transparent
-				), 
-				url(img/feathers.png);
-
-	width: 100%;
 	padding-top: 1px;
 }
+
+#discover {
+	text-align: center;
+	color: white;
+	font-family: $discover-font;
+	font-size: 4em;
+	margin: 40px 0;
+}
+
+#welcome-col {
+
+	h2 {
+		text-align: center;
+
+	}
+
+	p {
+		text-align: center;
+	}
+
+	img {
+		margin: 0 auto;
+		display: block;
+		width: 50%;
+		border-radius: 50%;
+	}
+
+}
+
+
 
 
 
