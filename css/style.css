@@ -21,6 +21,9 @@ ul {
   float: none;
   margin: 0 auto; }
 
+.transblack {
+  background: linear-gradient(to right, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0.4) 5%, #191919 30%, #191919 70%, rgba(25, 25, 25, 0.4) 95%, rgba(25, 25, 25, 0)); }
+
 header {
   min-height: 60px;
   background-color: #191919;
@@ -73,14 +76,22 @@ footer {
   font-size: 4em;
   margin: 40px 0; }
 
-#welcome-col h2 {
-  text-align: center; }
-#welcome-col p {
-  text-align: center; }
-#welcome-col img {
-  margin: 0 auto;
-  display: block;
-  width: 50%;
-  border-radius: 50%; }
+#welcome-col {
+  background: radial-gradient(rgba(25, 25, 25, 0), rgba(25, 25, 25, 0.95)), url(img/dark_embroidery.png);
+  padding: 5px 10px;
+  border-radius: 15px 0;
+  border: 5px solid #191919; }
+  #welcome-col h2 {
+    text-align: center;
+    color: #e6e6e6; }
+  #welcome-col p {
+    text-align: center;
+    color: #e6e6e6; }
+  #welcome-col img {
+    margin: 15px auto;
+    display: block;
+    width: 40%;
+    border-radius: 50%;
+    border: 2.5px solid #e6e6e6; }
 
 /*# sourceMappingURL=style.css.map */
