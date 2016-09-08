@@ -4,7 +4,8 @@
 
 		<div class="container full-ht">
 
-			<h1 id="discover">Discover the power of flawless copy</h1>
+			<h1 id="discover"><span id="firstSpan">Discover the power </span>
+								<span id="secondSpan">of flawless copy</span></h1>
 
 					<div class="container">
 						<div class="row">

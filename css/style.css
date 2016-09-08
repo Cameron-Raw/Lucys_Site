@@ -75,6 +75,8 @@ footer {
   font-family: "Kaushan Script", cursive;
   font-size: 4em;
   margin: 40px 0; }
+  #discover span {
+    opacity: 0; }
 
 #welcome-col {
   background: radial-gradient(rgba(25, 25, 25, 0), rgba(25, 25, 25, 0.95)), url(img/dark_embroidery.png);
