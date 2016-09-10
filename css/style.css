@@ -79,10 +79,12 @@ footer {
     opacity: 0; }
 
 #welcome-col {
+  position: relative;
   background: radial-gradient(rgba(25, 25, 25, 0), rgba(25, 25, 25, 0.95)), url(img/dark_embroidery.png);
   padding: 5px 10px;
   border-radius: 15px 0;
-  border: 5px solid #191919; }
+  border: 5px solid #191919;
+  opacity: 0; }
   #welcome-col h2 {
     text-align: center;
     color: #e6e6e6; }
