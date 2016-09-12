@@ -33,5 +33,27 @@ $(document).ready(function(){
 
 	//Then text
 
+	//Load mobile nav
+
+	var mobileNavButton = $(".nav-button");
+	var mobileNavList = $("#mobile-nav ul").find("li").toArray();
+
+
+	mobileNavButton.on('tap',function(){
+
+		$(mobileNavList).css({'top':'-800%',
+								'display':'block'});
+		$(mobileNavList).animate({opacity:1,top:0},1500);
+
+
+		console.log("Tap registered");
+
+		console.log(mobileNavList);
+
+
+
+
+	});
+
 });
 

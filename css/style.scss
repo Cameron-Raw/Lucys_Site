@@ -3,8 +3,11 @@
 @import "imports/_header.scss";
 @import "imports/_footer.scss";
 
+
+
 #content {
-	padding-top: 1px;
+padding-top: 1px;
+
 }
 
 #discover {
@@ -14,9 +17,6 @@
 	font-size: 4em;
 	margin: 40px 0;
 
-	span {
-		opacity: 0;
-	}
 }
 
 #welcome-col {
@@ -47,10 +47,15 @@
 		width: 40%;
 		border-radius: 50%;
 		border: 2.5px solid $off-white;
-		
+	
 	}
 
 }
+
+
+
+
+
 
 
 

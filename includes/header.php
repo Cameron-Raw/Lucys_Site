@@ -28,7 +28,7 @@
 
 			</div>
 
-			<nav>
+			<nav class="nav">
 				<ul class="group">
 					<li>Biography</li>
 					<li>Qualifications</li>
@@ -36,6 +36,21 @@
 					<li>Testimonials</li>
 					<li>Contact</li>
 				</ul>
+
+				<div id="mobile-nav">
+					<p><span class="nav-button glyphicon glyphicon-th"></span></p>
+						<ul class="group">
+							<li>Biography</li>
+							<li>Qualifications</li>
+							<li>Publications</li>
+							<li>Testimonials</li>
+							<li>Contact</li>
+						</ul>
+
+				</div>
+
+				
+
 			</nav>
 
 
