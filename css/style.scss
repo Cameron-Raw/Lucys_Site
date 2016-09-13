@@ -14,30 +14,30 @@ padding-top: 1px;
 	text-align: center;
 	color: white;
 	font-family: $discover-font;
-	font-size: 4em;
-	margin: 40px 0;
+	font-size: 2.5em;
+	margin: 20px 10px 30px;
+
 
 }
 
 #welcome-col {
 
 	position: relative;
-	background: radial-gradient(rgba(25,25,25,0),rgba(25,25,25,0.95)),
-				url(img/dark_embroidery.png);
+	background: linear-gradient(rgba(200,200,200,0.1),rgba(100,100,100,0.1)),url(img/paper.png);
 	padding: 5px 10px;
-	border-radius: 15px 0;
-	border: 5px solid $off-black;
-	opacity: 0;
+	width: 100%;
+	border-top: 5px solid $light-rose;
+	border-bottom: 5px solid $light-rose;
 
 	h2 {
 		text-align: center;
-		color: $off-white;
+		color: $off-black;
 
 	}
 
 	p {
 		text-align: center;
-		color: $off-white;
+		color: $off-black;
 
 	}
 
@@ -46,7 +46,8 @@ padding-top: 1px;
 		display: block;
 		width: 40%;
 		border-radius: 50%;
-		border: 2.5px solid $off-white;
+		box-shadow: black 0px 5px 5px;
+
 	
 	}
 

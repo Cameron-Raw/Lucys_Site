@@ -5,8 +5,8 @@ $(document).ready(function(){
 	var discoverBanner2 = $("#discover span:nth-child(2)");
 	var welcomeBlock = $("#welcome-col");
 
-	welcomeBlock.css({'top':'-20px',
-					'opacity':'0'});
+	// welcomeBlock.css({'top':'-20px',
+	//				'opacity':'0'});
 
 	//Load 'discover' slogan
 
@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 	}
 
-	loadPage();
+	// loadPage();
 
 	//Then lucy img
 
@@ -38,20 +38,44 @@ $(document).ready(function(){
 	var mobileNavButton = $(".nav-button");
 	var mobileNavList = $("#mobile-nav ul").find("li").toArray();
 
+	function hideMenu(){
 
+		$(mobileNavList).animate({opacity:0},500,function(){
+			$(mobileNavList).css({'display':'block'});
+		});
+		menuOpen = false;
+
+		console.log("Closing menu, menuOpen now false.");
+
+	}
+
+	function showMenu(){
+
+		$(mobileNavList).css({'display':'block'});
+		$(mobileNavList).animate({opacity:1},500);
+		menuOpen = true;
+
+		console.log("Opening menu, menuOpen now true.");
+
+	}
+
+	var menuOpen = false;
 	mobileNavButton.on('tap',function(){
 
-		$(mobileNavList).css({'top':'-800%',
-								'display':'block'});
-		$(mobileNavList).animate({opacity:1,top:0},1500);
+		
+
+		if(menuOpen === true){
+			hideMenu();
+		}else{
+			showMenu();
+		}
+
+
 
 
 		console.log("Tap registered");
 
 		console.log(mobileNavList);
-
-
-
 
 	});
 

@@ -2,14 +2,14 @@
 
 	<div id="content">
 
-		<div class="container full-ht">
+		<div>
 
 			<h1 id="discover"><span id="firstSpan">Discover the power </span>
 								<span id="secondSpan">of flawless copy</span></h1>
 
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-4 col-centered" id="welcome-col">
+					<div>
+						<div>
+							<div id="welcome-col">
 
 								<img id="lucy-img" src="img/lucymain.jpg">
 
