@@ -19,39 +19,15 @@
 <body>
 
 	<header>
-		<div class="container-fluid group">
+		<div>
 
 			<div id="logo-div">
 
 				<h1>Lucy Lynch</h1>
+				
 				<h2>Copywriter, copy-editor and proof reader</h2>
 
 			</div>
-
-			<nav class="nav">
-				<ul class="group">
-					<li>Biography</li>
-					<li>Qualifications</li>
-					<li>Publications</li>
-					<li>Testimonials</li>
-					<li>Contact</li>
-				</ul>
-
-				<div id="mobile-nav">
-					<p><span class="nav-button glyphicon glyphicon-th"></span></p>
-						<ul class="group">
-							<li>Biography</li>
-							<li>Qualifications</li>
-							<li>Publications</li>
-							<li>Testimonials</li>
-							<li>Contact</li>
-						</ul>
-
-				</div>
-
-				
-
-			</nav>
 
 
 		</div>

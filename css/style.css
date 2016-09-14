@@ -1,7 +1,7 @@
 /* Colour scheme */
 /* Fonts */
 body {
-  background: linear-gradient(rgba(77, 185, 91, 0.45), rgba(77, 185, 91, 0.45)), url(img/feathers.png); }
+  background: url(img/rename.jpg); }
 
 h1, h2, h3, h4 {
   font-family: "Julius Sans One", sans-serif; }
@@ -25,60 +25,28 @@ ul {
   background: linear-gradient(to right, rgba(25, 25, 25, 0), rgba(25, 25, 25, 0.4) 5%, #191919 30%, #191919 70%, rgba(25, 25, 25, 0.4) 95%, rgba(25, 25, 25, 0)); }
 
 header {
-  min-height: 60px;
-  background-color: #191919;
-  padding-top: 1px;
+  height: 100vh;
+  background: url(img/rename.jpg);
   color: white;
   z-index: 100; }
   header #logo-div {
-    max-height: 100%;
+    position: absolute;
+    top: 40%;
+    height: 20%;
     text-align: center;
-    z-index: 100; }
+    z-index: 100;
+    width: 100%;
+    background: linear-gradient(to left, rgba(100, 100, 100, 0.25), rgba(25, 25, 25, 0.25)); }
     header #logo-div h1 {
       font-size: 2.3em;
       margin-top: 2.5px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      padding-top: 10px; }
     header #logo-div h2 {
       font-size: 1em;
       margin-top: 0;
-      margin-bottom: 0; }
-  header nav {
-    text-align: center; }
-    header nav ul:nth-child(1) {
       margin-bottom: 0;
-      display: none; }
-      header nav ul:nth-child(1) li {
-        float: left;
-        font-family: "Julius Sans One", sans-serif;
-        padding: 5px 5px;
-        margin-top: 30px;
-        transition: color 1s; }
-        header nav ul:nth-child(1) li:hover {
-          color: #b94d69; }
-    header nav #mobile-nav {
-      position: relative;
-      z-index: 10; }
-      header nav #mobile-nav p {
-        color: #e6e6e6;
-        padding-top: 15px; }
-      header nav #mobile-nav span {
-        font-size: 2em; }
-      header nav #mobile-nav ul {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        font-family: "Julius Sans One", sans-serif;
-        padding-left: 0;
-        z-index: -50; }
-        header nav #mobile-nav ul li {
-          position: relative;
-          display: none;
-          opacity: 0;
-          padding: 15px 0;
-          z-index: 10;
-          background: linear-gradient(rgba(25, 25, 25, 0.65), rgba(25, 25, 25, 0.65)), url(img/concrete_seamless.png); }
-          header nav #mobile-nav ul li:nth-child(odd) {
-            background: linear-gradient(rgba(75, 75, 75, 0.65), rgba(75, 75, 75, 0.65)), url(img/concrete_seamless.png); }
+      padding-top: 10px; }
 
 footer {
   height: 60px;
@@ -91,33 +59,34 @@ footer {
     margin-top: 20px; }
 
 #content {
-  padding-top: 1px; }
+  padding-top: 1px;
+  height: 100vh; }
 
 #discover {
   text-align: center;
   color: white;
-  font-family: "Kaushan Script", cursive;
-  font-size: 2.5em;
-  margin: 20px 10px 30px; }
+  height: 20%;
+  padding-top: 1px; }
+  #discover h1 {
+    font-family: "Kaushan Script", cursive;
+    margin: 0 15px;
+    padding-top: 10px; }
 
 #welcome-col {
   position: relative;
-  background: linear-gradient(rgba(200, 200, 200, 0.1), rgba(100, 100, 100, 0.1)), url(img/paper.png);
   padding: 5px 10px;
-  width: 100%;
-  border-top: 5px solid #b94d69;
-  border-bottom: 5px solid #b94d69; }
+  width: 100%; }
   #welcome-col h2 {
     text-align: center;
-    color: #191919; }
+    color: #e6e6e6; }
   #welcome-col p {
     text-align: center;
-    color: #191919; }
+    color: #e6e6e6; }
   #welcome-col img {
     margin: 15px auto;
     display: block;
     width: 40%;
     border-radius: 50%;
-    box-shadow: black 0px 5px 5px; }
+    border: solid 2.5px #e6e6e6; }
 
 /*# sourceMappingURL=style.css.map */
