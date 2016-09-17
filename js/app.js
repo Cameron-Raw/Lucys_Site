@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-
-
-
-
 	//
 	// *** MODULE 1: Mobile nav control ***
 	//
@@ -85,10 +81,6 @@ $(document).ready(function(){
 
 	}());
 
-
-
-
-
 	//
 	// *** MODULE 2: Animating slogan on ***
 	//
@@ -100,11 +92,19 @@ $(document).ready(function(){
 		var discoverBanner1 = $("#discover span:nth-child(1)"); // "Discover the power "
 		var discoverBanner2 = $("#discover span:nth-child(2)"); // " of flawless copy"
 
+		// Store Welcome div as variable
+		var welcomeDiv = $("#welcome");
+
 		// Preset CSS starting point for animation
 		discoverBox.css({
 			"position":"absolute",
 			"top":"100%",
 			"opacity":"0"
+		});
+
+		welcomeDiv.css({
+				"opacity":"0",
+				"top": "20%"
 		});
 
 		// Create function that first reveals Discover div, and calls next function, loadText.
@@ -137,32 +137,25 @@ $(document).ready(function(){
 			discoverBox.animate({
 				top: "0%"
 			},750,function(){
-				console.log("DEBUG: slideDiscoverUp complete");
+				console.log("DEBUG: slideDiscoverUp complete, now loadWelcomeDiv");
+				loadWelcomeDiv();
 			});
 		}
 
-		
+		function loadWelcomeDiv(){
 
+			// Animate the welcome div, fading in and upwards after the discovery div
+			welcomeDiv.animate({
+				opacity:1,
+				top:"0%"
+			},750,function(){
+				console.log("DEBUG: Welcome div loaded.");
+			})
+		}
 		// Call revealDiscover to start chain of animation events
 		revealDiscover();
 
-
 	}());
-
-
-
-
-
-	//
-	// *** MODULE 3: Animating 'Welcome' div ***
-	//
-
-
-
-	
-
-
-
 
 });
 
