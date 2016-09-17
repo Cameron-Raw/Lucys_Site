@@ -66,10 +66,9 @@ header {
 			a {
 				float: left;
 				width: 100%;
+				color: $off-black;
 
-				&:active {
-					text-decoration: none;
-				}
+				
 
 				li {
 				
@@ -77,12 +76,14 @@ header {
 					width: 100%;
 					font-family: $headline-font;
 					padding: 15px 5px;
-					border-bottom: 2.5px solid $off-black;
+					border-bottom: 2.5px solid $off-white;
 					
 					transition: color 1s;
 					text-align: center;
 
-					background: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8));
+					background: linear-gradient(rgba(230,230,230,0.9),rgba(230,230,230,0.9));
+					
+					font-size: 1.25em;
 
 					&:hover {
 						color: $light-rose;

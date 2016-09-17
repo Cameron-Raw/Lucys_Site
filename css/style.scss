@@ -8,6 +8,9 @@
 	float: left;
 	height: 65%;
 	width: 100%;
+	position: relative;
+	background-image: url(img/greenbackground.jpg);
+	background-size: cover;
 }
 
 #discover {
@@ -16,8 +19,9 @@
 	color: white;
 	height: 22.5%;
 	width: 100%;
+	box-shadow: $off-black 0px 0px 0px;
 	
-	background-color: $light-rose;
+	background: linear-gradient(rgba(25,25,25,0.45),rgba(25,25,25,0.95));
 	padding: 5px 0 15px;
 
 	h1 {
@@ -34,9 +38,40 @@
 
 #welcome {
 
+	margin-top: 25%;
 	height: 77.5%;
-	padding: 5px 0;
 	position: relative;
+
+	.container {
+		height: 100%;
+		text-align: center;
+
+		img {
+			border-radius: 50%;
+			height: 40%;
+			display: block;
+			margin: 10px auto;
+			border: 2.5px solid rgba(230,230,230,0.65);
+
+		}
+
+		#introduction {
+
+			padding-top: 1px;
+			background: linear-gradient(rgba(25,25,25,0.45),rgba(25,25,25,0.95));
+			border-radius: 0 15px;
+			height: 45%;
+			color: $off-white;
+			border: 2.5px solid rgba(230,230,230,0.45);
+
+			h1 {
+				font-size: 2em;
+				font-family: $discover-font;
+			}
+
+		}
+	
+	}
 
 }
 

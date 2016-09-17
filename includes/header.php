@@ -21,7 +21,11 @@
 	<header>
 		<div class="head-container group">
 
-			<a href="index.php"><div id="logo-div">
+			<a <?php if($currentPage !== "index") {
+
+						echo "href = \"index.php\"";
+
+					}?>><div id="logo-div">
 
 				<h1>Lucy Lynch</h1>
 				<h2>Copywriter, copy-editor and proof reader</h2>

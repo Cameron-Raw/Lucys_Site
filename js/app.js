@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+
+
+
+
 	//
 	// *** MODULE 1: Mobile nav control ***
 	//
@@ -82,6 +86,9 @@ $(document).ready(function(){
 	}());
 
 
+
+
+
 	//
 	// *** MODULE 2: Animating slogan on ***
 	//
@@ -89,24 +96,66 @@ $(document).ready(function(){
 	(function(){
 
 		// Store components of slogan as variables
+		var discoverBox = $("#discover"); // Div that contains the slogan
 		var discoverBanner1 = $("#discover span:nth-child(1)"); // "Discover the power "
 		var discoverBanner2 = $("#discover span:nth-child(2)"); // " of flawless copy"
 
-		// Store loadPage function
-		function loadPage(){
+		// Preset CSS starting point for animation
+		discoverBox.css({
+			"position":"absolute",
+			"top":"100%",
+			"opacity":"0"
+		});
 
-			discoverBanner1.animate({opacity:1},1000,function(){
-			discoverBanner2.animate({opacity:1},1000, function(){
-				console.log("DEBUG: Slogan successfully loaded.");
+		// Create function that first reveals Discover div, and calls next function, loadText.
+		function revealDiscover(){
+
+			discoverBox.animate({
+				opacity:1,
+				top: "38.5%"
+			},750,function(){
+				console.log("DEBUG: revealDiscover complete, now loadText");
+				loadText();
+			});
+
+		}
+
+		// Create function that slowly reveals text and calls next function, slideDiscoverUp.
+		function loadText(){
+
+			discoverBanner1.animate({opacity:1},750,function(){
+			discoverBanner2.animate({opacity:1},750, function(){
+				console.log("DEBUG: loadText complete, now slideDiscoverUp");
+				slideDiscoverUp();
 			});
 			});
 
 		}
 
-		// Execute loadPage()
-		loadPage();
+		// The last animation in the sequence slides the Discovery div upwards to its final place.
+		function slideDiscoverUp(){
+			discoverBox.animate({
+				top: "0%"
+			},750,function(){
+				console.log("DEBUG: slideDiscoverUp complete");
+			});
+		}
+
+		
+
+		// Call revealDiscover to start chain of animation events
+		revealDiscover();
+
 
 	}());
+
+
+
+
+
+	//
+	// *** MODULE 3: Animating 'Welcome' div ***
+	//
 
 
 
