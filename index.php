@@ -1,3 +1,4 @@
+<?php $currentPage = "index" ?>
 <?php include 'includes/header.php'; ?>
 
 	<div id="content">

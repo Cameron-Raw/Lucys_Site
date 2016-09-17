@@ -75,6 +75,8 @@ header {
       header .head-container nav a {
         float: left;
         width: 100%; }
+        header .head-container nav a:active {
+          text-decoration: none; }
         header .head-container nav a li {
           width: 100%;
           font-family: "Julius Sans One", sans-serif;
@@ -85,6 +87,8 @@ header {
           background: linear-gradient(rgba(25, 25, 25, 0.8), rgba(25, 25, 25, 0.8)); }
           header .head-container nav a li:hover {
             color: #b94d69; }
+      header .head-container nav .currentPage {
+        color: #b94d69; }
 
 footer {
   height: 10%;

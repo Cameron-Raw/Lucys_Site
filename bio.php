@@ -1,3 +1,4 @@
+<?php $currentPage = "bio" ?>
 <?php include 'includes/header.php'; ?>
 
 	<div id="content">

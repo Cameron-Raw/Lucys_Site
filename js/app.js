@@ -19,31 +19,64 @@ $(document).ready(function(){
 			e.target.click(); // Touch event essentially just runs click event
 		},false);
 
+		// Store opening animation as function
+		function openMenu(){
+
+			navMenu.css("display","block");
+			navMenu.animate({
+				opacity : 1
+			},500,function(){
+				menuOpen = true;
+			});
+
+		}
+
+		// Store closing animation as function
+		function closeMenu(){
+
+			navMenu.animate({
+				opacity: 0
+			},250,function(){
+				navMenu.css("display","none");
+				menuOpen = false;
+			});
+
+		}
+
+		// Bind openMenu and closeMenu events to navButton
 		navButton.click(function(){
 
 			// If menu is closed, then open it
 			if(menuOpen === false){
-				navMenu.css("display","block");
-				navMenu.animate({
-					opacity : 1
-				},500,function(){
-					menuOpen = true;
-				});
+
+				openMenu();
 				
 			}else{
 				// else, close menu.
-				navMenu.animate({
-					opacity: 0
-				},250,function(){
-					navMenu.css("display","none");
-					menuOpen = false;
-				});
+				closeMenu();
 
 			}
 
 			console.log("DEBUG: Click/touch registered!");
 
 		});
+
+		// Close menu if user selects the current page from nav
+
+		var currentPage = $(".currentPage");
+
+		currentPage.on('touch', function(e){
+			e.preventDefault();
+			e.target.click();
+		},false);
+
+		currentPage.click(function(){
+
+			closeMenu();
+
+		});
+
+
 
 
 	}());

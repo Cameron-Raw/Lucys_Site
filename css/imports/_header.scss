@@ -67,6 +67,10 @@ header {
 				float: left;
 				width: 100%;
 
+				&:active {
+					text-decoration: none;
+				}
+
 				li {
 				
 					
@@ -84,6 +88,12 @@ header {
 						color: $light-rose;
 					}
 				}
+
+			}
+
+			.currentPage {
+
+				color: $light-rose;
 
 			}
 

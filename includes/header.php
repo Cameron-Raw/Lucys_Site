@@ -37,11 +37,61 @@
 			<nav>
 
 				<ul class="group">
-					<a href="bio.php">				<li>Biography</li>		</a>
-					<a href="qualifications.php">	<li>Qualifications</li>	</a>
-					<a href="publications.php">		<li>Publications</li>	</a>
-					<a href="testimonials.php">		<li>Testimonials</li>	</a>
-					<a href="contact.php">			<li>Contact</li>		</a>
+
+					<a <?php if($currentPage == "bio") {
+
+						echo "class = \"currentPage\"";
+
+					} else {
+
+						echo "href=\"bio.php\"";
+
+					}
+						 ?>><li>Biography</li></a>
+
+					<a <?php if($currentPage == "qualifications") {
+
+						echo "class = \"currentPage\"";
+
+					} else {
+
+						echo "href=\"qualifications.php\"";
+
+					}
+						 ?>><li>Qualifications</li></a>
+
+					<a <?php if($currentPage == "publications") {
+
+						echo "class = \"currentPage\"";
+
+					} else {
+
+						echo "href=\"publications.php\"";
+
+					}
+						 ?>><li>Publications</li></a>
+
+					<a <?php if($currentPage == "testimonials") {
+
+						echo "class = \"currentPage\"";
+
+					} else {
+
+						echo "href=\"testimonials.php\"";
+
+					}
+						 ?>><li>Testimonials</li></a>
+
+					<a <?php if($currentPage == "contact") {
+
+						echo "class = \"currentPage\"";
+
+					} else {
+
+						echo "href=\"contact.php\"";
+
+					}
+						 ?>><li>Contact</li></a>
 				</ul>
 			</nav>
 
