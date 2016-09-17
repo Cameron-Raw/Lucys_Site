@@ -1,10 +1,55 @@
-html, body {
-	height: 100%;
-	width: 100%;
-	font-family: $paragraph-font;
+body {
+	background: linear-gradient(
+				$background-transparent,
+				$background-transparent
+				);
+	height: 100vh;
 }
 
 h1, h2, h3, h4 {
 	font-family: $headline-font;
-	margin: 0;
+}
+
+p {
+	font-family: $p-font;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+
+	&:active,
+	&:focus,
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+	list-style: none;
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.transblack {
+		background: linear-gradient(
+				to right,
+				rgba(25,25,25,0),
+				rgba(25,25,25,0.4) 5%,
+				rgba(25,25,25,1) 30%,
+				rgba(25,25,25,1) 70%,
+				rgba(25,25,25,0.4) 95%,
+				rgba(25,25,25,0)
+				);
 }

@@ -1,11 +1,17 @@
 footer {
-
-	@include headerFooter();
+	height: 10%;
+	position: fixed;
+	bottom: 0;
+	background-color: $off-black;
+	width: 100%;
+	text-align: center;
+	color: white;
+	border-top: 2.5px solid $off-white;
 
 	p {
-		text-align: center;
-		position: relative;
-		width: 50%;
-		left: 25%;
+		margin-top: 5%;
+		font-family: $headline-font;
+		
 	}
+	
 }

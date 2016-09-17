@@ -1,96 +1,79 @@
-@import 'imports/_variables';
-@import 'imports/_mixins';
-@import 'imports/_global';
-@import 'imports/_header';
-@import 'imports/_footer';
+@import "imports/_variables.scss";
+@import "imports/_global.scss";
+@import "imports/_header.scss";
+@import "imports/_footer.scss";
 
 #content {
-	height: 80%;
+	padding-top: 1px;
+	float: left;
+	height: 65%;
 	width: 100%;
-	background: linear-gradient(
-					rgba(77, 185, 91, 0.6),
-					rgba(77, 185, 91, 0.6)
-				),
-				url(img/feathers.png);
-}
-
-#content-container {
 	position: relative;
-	height: 90%;
-	width: 80%;
-	top: 5%;
-	left: 10%;
+	background-image: url(img/greenbackground.jpg);
+	background-size: cover;
 }
 
 #discover {
-	font-size: 3.5em;
-	font-family: 'Kaushan Script', sans-serif;
-
-	color: white;
+	
 	text-align: center;
-
-	margin: 0;
-
-	width: 100%;
-}
-
-#part1, #part2 {
-	opacity: 0;
-}
-
-#greeting {
-	position: absolute;
-	top:35%;
-	width: 100%;
-	height: 50%;
 	color: white;
-	opacity: 0;
-
-	img {
-		position: relative;
-		width: 20%;
-
-		margin: 20px 0;
-		left: 40%;
-		border-radius: 50%;
-		border: 2px solid white;
-		box-shadow: 0px 5px 15px black;
-		opacity: 0;
-	}
-
-	h2 {
-		position: relative;
-		text-align: center;
-		opacity: 0;
-	}
-
-	p {
-		position: relative;
-		text-align: center;
-		opacity: 0;
-		left: 10%;
-		width: 80%;
-		color: white;
-	}
-}
-
-#lucy-hello {
-	position: relative;
-	left: 25%;
-	height: 90%;
-	width: 50%;
-	margin: 0;
-}
-
-.overlay {
-	position: absolute;
-	height: 100%;
+	height: 22.5%;
 	width: 100%;
-	background: linear-gradient(rgba(0,0,0,0.45),
-								rgba(0,0,0,0.6));
+	box-shadow: $off-black 0px 0px 0px;
+	
+	background: linear-gradient(rgba(25,25,25,0.45),rgba(25,25,25,0.95));
+	padding: 5px 0 15px;
+
+	h1 {
+		font-family: $discover-font;
+		font-size: 2em;
+		margin: 0;
+		text-shadow: rgba(25,25,25,0.5) 0px 5px 5px;
+	}
+
+	span {
+		opacity: 0;
+	}
 }
 
+#welcome {
 
+	margin-top: 25%;
+	height: 77.5%;
+	position: relative;
+
+	.container {
+		height: 100%;
+		text-align: center;
+
+		img {
+			border-radius: 50%;
+			height: 40%;
+			display: block;
+			margin: 10px auto;
+			border: 2.5px solid rgba(230,230,230,0.65);
+
+		}
+
+		#introduction {
+
+			padding-top: 1px;
+			background: linear-gradient(rgba(25,25,25,0.45),rgba(25,25,25,0.95));
+			border-radius: 0 15px;
+			height: 45%;
+			color: $off-white;
+			border: 2.5px solid rgba(230,230,230,0.45);
+
+			h1 {
+				font-size: 2em;
+				font-family: $discover-font;
+			}
+
+		}
+	
+	}
+
+}
 
 
 
