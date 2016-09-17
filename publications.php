@@ -2,7 +2,7 @@
 
 	<div id="content">
 
-
+		<h1>This is the Publications page</h1>
 
 
 			

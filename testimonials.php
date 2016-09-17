@@ -2,7 +2,7 @@
 
 	<div id="content">
 
-
+		<h1>This is the Testimonials page</h1>
 
 
 			

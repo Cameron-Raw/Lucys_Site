@@ -2,6 +2,8 @@
 
 	<div id="content">
 
+		<h1>This is the Bio page</h1>
+
 
 
 

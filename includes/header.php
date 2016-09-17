@@ -37,11 +37,11 @@
 			<nav>
 
 				<ul class="group">
-					<li>Biography</li>
-					<li>Qualifications</li>
-					<li>Publications</li>
-					<li>Testimonials</li>
-					<li>Contact</li>
+					<a href="bio.php">				<li>Biography</li>		</a>
+					<a href="qualifications.php">	<li>Qualifications</li>	</a>
+					<a href="publications.php">		<li>Publications</li>	</a>
+					<a href="testimonials.php">		<li>Testimonials</li>	</a>
+					<a href="contact.php">			<li>Contact</li>		</a>
 				</ul>
 			</nav>
 

@@ -2,7 +2,7 @@
 
 	<div id="content">
 
-
+		<h1>This is the Contact page</h1>
 
 
 			
