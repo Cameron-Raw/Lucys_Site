@@ -5,50 +5,38 @@
 
 #content {
 	padding-top: 1px;
+	float: left;
+	height: 65%;
+	width: 100%;
 }
 
 #discover {
+	
 	text-align: center;
 	color: white;
-	font-family: $discover-font;
-	font-size: 4em;
-	margin: 40px 0;
+	height: 22.5%;
+	width: 100%;
+	
+	background-color: $light-rose;
+	padding: 5px 0 15px;
+
+	h1 {
+		font-family: $discover-font;
+		font-size: 2em;
+		margin: 0;
+		text-shadow: rgba(25,25,25,0.5) 0px 5px 5px;
+	}
 
 	span {
 		opacity: 0;
 	}
 }
 
-#welcome-col {
+#welcome {
 
+	height: 77.5%;
+	padding: 5px 0;
 	position: relative;
-	background: radial-gradient(rgba(25,25,25,0),rgba(25,25,25,0.95)),
-				url(img/dark_embroidery.png);
-	padding: 5px 10px;
-	border-radius: 15px 0;
-	border: 5px solid $off-black;
-	opacity: 0;
-
-	h2 {
-		text-align: center;
-		color: $off-white;
-
-	}
-
-	p {
-		text-align: center;
-		color: $off-white;
-
-	}
-
-	img {
-		margin: 15px auto;
-		display: block;
-		width: 40%;
-		border-radius: 50%;
-		border: 2.5px solid $off-white;
-		
-	}
 
 }
 

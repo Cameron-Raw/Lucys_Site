@@ -2,8 +2,8 @@ body {
 	background: linear-gradient(
 				$background-transparent,
 				$background-transparent
-				), 
-				url(img/feathers.png);
+				);
+	height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -12,6 +12,12 @@ h1, h2, h3, h4 {
 
 p {
 	font-family: $p-font;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+
 }
 
 .group:after {

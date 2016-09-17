@@ -1,5 +1,5 @@
 footer {
-	height: 60px;
+	height: 10%;
 	position: fixed;
 	bottom: 0;
 	background-color: $off-black;
@@ -8,8 +8,9 @@ footer {
 	color: white;
 
 	p {
+		margin-top: 5%;
 		font-family: $headline-font;
-		margin-top: 20px;
+		
 	}
 	
 }

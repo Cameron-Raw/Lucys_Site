@@ -19,16 +19,23 @@
 <body>
 
 	<header>
-		<div class="container-fluid group">
+		<div class="head-container group">
 
-			<div id="logo-div">
+			<a href="index.php"><div id="logo-div">
 
 				<h1>Lucy Lynch</h1>
 				<h2>Copywriter, copy-editor and proof reader</h2>
 
+			</div></a>
+
+			<div id="navButton">
+
+				<img src="img/nav.png">
+
 			</div>
 
 			<nav>
+
 				<ul class="group">
 					<li>Biography</li>
 					<li>Qualifications</li>

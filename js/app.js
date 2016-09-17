@@ -20,18 +20,12 @@ $(document).ready(function(){
 
 	}
 
-	function loadWelcome(){
-
-		//Then greetings div
-		
-
-	}
 
 	loadPage();
 
-	//Then lucy img
+	// The following code controls the functioning of the mobile navigation
 
-	//Then text
+
 
 });
 
