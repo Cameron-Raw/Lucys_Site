@@ -1,17 +1,25 @@
-body {
-	background: linear-gradient(
-				$background-transparent,
-				$background-transparent
-				);
+html {
 	height: 100vh;
+	width: 100%;
+}
+
+body {
+
+	height: 100vh;
+	width: 100%;
+	background-image: url(img/greenbackground.jpg);
+	background-size: cover;
+	margin: 0;
 }
 
 h1, h2, h3, h4 {
 	font-family: $headline-font;
+	color: $off-white;
 }
 
 p {
 	font-family: $p-font;
+	color: $off-white;
 }
 
 a {
@@ -52,4 +60,14 @@ ul {
 				rgba(25,25,25,0.4) 95%,
 				rgba(25,25,25,0)
 				);
+}
+
+#content {
+	padding-top: 1px;
+	float: left;
+	height: 65%;
+	width: 100%;
+	position: relative;
+	
+	background-size: cover;
 }

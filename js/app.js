@@ -98,7 +98,7 @@ $(document).ready(function(){
 		// Preset CSS starting point for animation
 		discoverBox.css({
 			"position":"absolute",
-			"top":"100%",
+			"top":"38.5%",
 			"opacity":"0"
 		});
 
@@ -111,8 +111,7 @@ $(document).ready(function(){
 		function revealDiscover(){
 
 			discoverBox.animate({
-				opacity:1,
-				top: "38.5%"
+				opacity:1
 			},750,function(){
 				console.log("DEBUG: revealDiscover complete, now loadText");
 				loadText();
@@ -123,8 +122,8 @@ $(document).ready(function(){
 		// Create function that slowly reveals text and calls next function, slideDiscoverUp.
 		function loadText(){
 
-			discoverBanner1.animate({opacity:1},750,function(){
-			discoverBanner2.animate({opacity:1},750, function(){
+			discoverBanner1.animate({opacity:1},1000,function(){
+			discoverBanner2.animate({opacity:1},1000, function(){
 				console.log("DEBUG: loadText complete, now slideDiscoverUp");
 				slideDiscoverUp();
 			});
@@ -147,7 +146,7 @@ $(document).ready(function(){
 			// Animate the welcome div, fading in and upwards after the discovery div
 			welcomeDiv.animate({
 				opacity:1,
-				top:"0%"
+				top:"22.5%"
 			},750,function(){
 				console.log("DEBUG: Welcome div loaded.");
 			})

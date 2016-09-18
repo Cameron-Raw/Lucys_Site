@@ -9,8 +9,11 @@ footer {
 	border-top: 2.5px solid $off-white;
 
 	p {
-		margin-top: 5%;
+		position: relative;
+		top: 25%;
 		font-family: $headline-font;
+		height: 50%;
+		margin: 0;
 		
 	}
 	

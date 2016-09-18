@@ -1,7 +1,7 @@
 <?php $currentPage = "index" ?>
 <?php include 'includes/header.php'; ?>
 
-	<div id="content">
+	
 
 		<div id="discover">
 
@@ -30,26 +30,7 @@
 
 		</div>
 
-
-			
-
-
-		
-
-
-
-
-
-
-			
-
-
-
-		
-
-
-
-	</div>
+	
 
 
 

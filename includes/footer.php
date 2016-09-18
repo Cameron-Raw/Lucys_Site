@@ -1,3 +1,5 @@
+	</div>
+
 	<footer>
 		<p>Cameron Raw Web Development <?php echo date("Y"); ?>  &copy;</p>
 	</footer>

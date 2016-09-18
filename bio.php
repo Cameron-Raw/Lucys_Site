@@ -1,7 +1,7 @@
 <?php $currentPage = "bio" ?>
 <?php include 'includes/header.php'; ?>
 
-	<div id="content">
+
 
 		<h1>This is the Bio page</h1>
 
@@ -26,7 +26,7 @@
 
 
 
-	</div>
+
 
 
 
