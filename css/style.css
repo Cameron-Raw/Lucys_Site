@@ -1,5 +1,6 @@
 /* Colour scheme */
 /* Fonts */
+/* CSS Media Query Breakpoints */
 html {
   height: 100vh;
   width: 100%; }
@@ -110,6 +111,50 @@ header {
       header .head-container nav .currentPage {
         color: #b94d69; }
 
+/* 
+
+*** CSS Media Query for laptop sizes ***
+
+*/
+@media (min-width: 769px) {
+  header {
+    height: 15%; }
+    header .head-container {
+      position: relative; }
+      header .head-container #logo-div {
+        position: relative;
+        top: 12.5%;
+        height: 75%;
+        width: 35%;
+        margin-left: 15px; }
+        header .head-container #logo-div h1 {
+          text-align: left;
+          margin-top: 1%; }
+        header .head-container #logo-div h2 {
+          text-align: left; }
+      header .head-container nav {
+        display: block;
+        height: 50%;
+        width: 60%;
+        float: right;
+        top: 35%;
+        position: absolute;
+        right: 0; }
+        header .head-container nav ul {
+          display: block;
+          opacity: 1;
+          width: 100%;
+          position: absolute;
+          bottom: 0; }
+          header .head-container nav ul a {
+            width: 20%; }
+            header .head-container nav ul a li {
+              font-size: 0.9em;
+              border-bottom: none;
+              padding: 0; }
+
+  #navButton {
+    display: none; } }
 footer {
   height: 10%;
   position: fixed;

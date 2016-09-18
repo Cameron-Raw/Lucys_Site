@@ -106,3 +106,83 @@ header {
 
 
 }
+
+/* 
+
+*** CSS Media Query for laptop sizes ***
+
+*/
+
+@media (min-width: $breakpoint-laptop) {
+
+	header {
+
+		height: 15%;
+
+		.head-container {
+
+			position: relative;
+
+
+			#logo-div {
+				position: relative;
+				top: 12.5%;
+				height: 75%;
+				width: 35%;
+				margin-left: 15px;
+				
+				h1 {
+					text-align: left;
+					margin-top: 1%;
+				}
+
+				h2 {
+					text-align: left;
+				}
+			}
+
+			nav {
+				display: block;
+				height: 50%;
+				width: 60%;
+				float: right;
+				top: 35%;
+				position: absolute;
+				right: 0;
+
+				ul {
+					display: block;
+					opacity: 1;
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+
+					a {
+						width: 20%;
+
+
+						
+
+						li {
+							font-size: 0.9em;
+							border-bottom: none;
+							padding: 0;
+						}
+					}
+				}
+			}
+
+		}
+
+
+
+
+	}
+
+
+
+	#navButton {
+		display: none;
+	}
+
+}
