@@ -1,0 +1,137 @@
+@media (min-width: $breakpoint-laptop) {
+
+	header {
+
+		position: absolute;
+		width: 100%;
+		height: 30%;
+		top: 35%;
+		background: none;
+
+
+
+		.overlay {
+			display: block;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 0;
+
+			background: linear-gradient(rgba(25,25,25,0.25),rgba(25,25,25,0.25)), url("img/greenbackground.jpg");
+			background-size: cover;
+			background-position: 50% 35%;
+			-webkit-filter: blur(5px);
+		}
+
+
+		
+
+		.head-container {
+
+			position: relative;
+
+			#logo-div {
+				
+				height: 100%;
+				width: 35%;
+				margin-left: 15px;
+				float: left;
+				z-index: 100;
+				position: relative;
+				border-right: solid 2px rgba(230,230,230,0.45);
+
+				a {
+					width: 100%;
+					height: 25%;
+					display: block;
+					position: absolute;
+					top: 37.5%;
+
+					h1 {
+						text-align: center;
+						margin: 0;
+					}
+
+					h2 {
+						text-align: center;
+						margin:0;
+					}
+
+				}
+
+				#fixedHead {
+					position: fixed;
+					top: 1%;
+					left: 1%;
+					max-width: 30%;
+
+					h1, h2 {
+						text-align: left;
+					}
+				}
+				
+
+			}
+
+			nav {
+				display: inherit;
+				height: 5%;
+				width: 60%;
+				float: right;
+				right: 0;
+				top: 0%;
+				z-index: 1000;
+
+				position: fixed;
+
+
+
+				ul {
+					display: block;
+					opacity: 1;
+					width: 100%;
+					top: auto;
+					bottom: 10%;
+
+					a {
+						width: 15%;
+						margin: 0 2.5%;
+						
+
+
+
+						
+
+						li {
+							font-size: 0.9em;
+							border-bottom: none;
+							padding: 0;
+							display: block;
+							width: 100%;
+							text-align: center;
+							background: none;
+						}
+					}
+				}
+			}
+
+		}
+
+
+
+
+	}
+
+
+
+	#navButton {
+		display: none;
+	}
+
+	#content {
+	height: 100%;
+}
+
+}

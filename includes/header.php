@@ -19,18 +19,20 @@
 <body>
 
 	<header>
+		<div class="overlay"></div>
 		<div class="head-container group">
 
-			<a <?php if($currentPage !== "index") {
+			<div id="logo-div">
+				<a <?php if($currentPage !== "index") {
 
-						echo "href = \"index.php\"";
+						echo "href = \"index.php\" id=\"fixedHead\" ";
 
-					}?>class="group"><div id="logo-div">
+					}?>class="group">
 
-				<h1>Lucy Lynch</h1>
-				<h2>Copywriter, copy-editor and proof reader</h2>
-
-			</div></a>
+					<h1>Lucy Lynch</h1>
+					<h2>Copywriter, copy-editor and proof reader</h2>
+				</a>
+			</div>
 
 			<div id="navButton">
 

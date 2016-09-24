@@ -1,0 +1,71 @@
+@media (min-width: $breakpoint-laptop){
+
+	#discover {
+
+		width: 65%;
+		left: 35%;
+		right: 0;
+		height: 30%;
+		padding: 0;
+		background: none;
+
+		h1 {
+			position: relative;
+			height: 80%;
+			top: 10%;
+			text-shadow: none;
+			span {
+				font-size: 2em;
+				height: 50%;
+				display: block;
+			}
+		}
+	}
+
+	#welcome {
+
+		display: none;
+
+
+
+		.container {
+
+			border: solid red 5px;
+			background: $white-transparent;
+
+
+			img {
+				margin: 0;
+			}
+
+			#introduction {
+				margin-right: 0;
+				max-width: 100%;
+				background: none;
+				border: none;
+			}
+
+
+
+
+		}
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -4,6 +4,11 @@ $(document).ready(function(){
 	// *** MODULE 1: Mobile nav control ***
 	//
 
+	var mobileView;
+	if ($(window).width() < 769){
+		mobileView = true;
+	}
+
 	(function(){
 
 		// Store nav button as variable
@@ -95,12 +100,28 @@ $(document).ready(function(){
 		// Store Welcome div as variable
 		var welcomeDiv = $("#welcome");
 
-		// Preset CSS starting point for animation
-		discoverBox.css({
-			"position":"absolute",
-			"top":"38.5%",
-			"opacity":"0"
-		});
+
+		if(mobileView){
+
+			// Preset CSS starting point for animation
+			discoverBox.css({
+				"position":"absolute",
+				"top":"38.5%",
+				"opacity":"0"
+		
+			});
+
+		}else{
+
+			discoverBox.css({
+				"position":"absolute",
+				"top":"35%",
+				"opacity":"0"
+			});
+
+		}
+
+
 
 		welcomeDiv.css({
 				"opacity":"0",
@@ -125,21 +146,34 @@ $(document).ready(function(){
 			discoverBanner1.animate({opacity:1},1000,function(){
 			discoverBanner2.animate({opacity:1},1000, function(){
 				console.log("DEBUG: loadText complete, now slideDiscoverUp");
-				slideDiscoverUp();
+
+				if(mobileView){
+
+					slideDiscoverUp();
+
+				}
+				
 			});
 			});
 
 		}
 
-		// The last animation in the sequence slides the Discovery div upwards to its final place.
-		function slideDiscoverUp(){
-			discoverBox.animate({
-				top: "0%"
-			},750,function(){
-				console.log("DEBUG: slideDiscoverUp complete, now loadWelcomeDiv");
-				loadWelcomeDiv();
-			});
+		if(mobileView){
+
+			// The last animation in the sequence slides the Discovery div upwards to its final place.
+			function slideDiscoverUp(){
+				discoverBox.animate({
+					top: "0%"
+				},750,function(){
+					console.log("DEBUG: slideDiscoverUp complete, now loadWelcomeDiv");
+					loadWelcomeDiv();
+				});
+			}
+
+
 		}
+
+
 
 		function loadWelcomeDiv(){
 
