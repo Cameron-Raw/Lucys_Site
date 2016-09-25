@@ -77,7 +77,7 @@
 
 			nav {
 				display: inherit;
-				height: 5%;
+				height: 10%;
 				width: 60%;
 				float: right;
 				right: 0;
@@ -124,6 +124,25 @@
 
 	}
 
+	#hiddenHead {
+		background: none;
+		position: fixed;
+		top: 0;
+		height: 10%;
+
+		.overlay {
+			display: none;
+		}
+
+		.head-container {
+
+			#logo-div {
+				border-right: none;
+			}
+		}
+
+	}
+
 
 
 	#navButton {
@@ -131,7 +150,26 @@
 	}
 
 	#content {
-	height: 100%;
-}
+	position: relative;
+	height: 80%;
+	top: 10%;
+	bottom: 10%;
+	width: 70%;
+	left: 15%;
+
+		h1 	{
+			text-align: center;
+			background: rgba(25,25,25,0.65);
+			padding: 15px 0;
+		}
+
+		p {
+			background: $off-black;
+			padding: 15px;
+		}
+
+	}
+
+
 
 }

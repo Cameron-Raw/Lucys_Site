@@ -8,6 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Call in Bootstrap js files from CDN (older version) -->
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+	<script src="js/modules/nav.js"></script>
+	<script src="js/modules/slogan.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

@@ -1,7 +1,6 @@
 <?php $currentPage = "qualifications" ?>
 <?php include 'includes/header.php'; ?>
 
-	<div id="content">
 
 		<h1>This is the Qualifications page</h1>
 
@@ -24,7 +23,7 @@
 
 		</p>
 
-	</div>
+
 
 
 

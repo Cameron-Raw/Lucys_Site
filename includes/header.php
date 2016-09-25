@@ -13,12 +13,17 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
 	<title>Lucy Lynch || Literary Services</title>
 </head>
 
 <body>
 
-	<header>
+	<header <?php if($currentPage !== "index") {
+
+						echo "id=\"hiddenHead\" ";
+
+			}?> >
 		<div class="overlay"></div>
 		<div class="head-container group">
 
@@ -107,4 +112,9 @@
 
 	</header>
 
-	<div id="content" class="container">
+	<div id="content" class="container <?php if($currentPage == "index") {
+
+						echo "index";
+
+					}
+						 ?>">

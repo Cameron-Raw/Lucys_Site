@@ -5,8 +5,8 @@
 
 		<div id="discover">
 
-			<h1><span id="firstSpan">Discover the power <br></span>
-								<span id="secondSpan">of flawless copy</span></h1>
+			<h1><span id="firstSpan">Discover the power&nbsp; </span>
+								<span id="secondSpan"> of flawless copy.</span></h1>
 		</div>
 
 		<div id="welcome">
